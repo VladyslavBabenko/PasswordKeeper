@@ -1,11 +1,12 @@
 package com.github.vladyslavbabenko.passwordkeeper;
 
-import org.springframework.boot.SpringApplication;
+import com.github.vladyslavbabenko.passwordkeeper.javafx.JavaFxApplication;
+import javafx.application.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class PasswordKeeperApplication {
     public static void main(String[] args) {
-        SpringApplication.run(PasswordKeeperApplication.class, args);
+        Application.launch(JavaFxApplication.class, args);
     }
 }
