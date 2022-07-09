@@ -24,6 +24,14 @@ public class JavaFxApplication extends Application {
 
     @Override
     public void start(Stage stage) {
+        FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
+        Parent root = fxWeaver.loadView(FXController.class);
+        Scene scene = new Scene(root);
+        stage.setResizable(false);
+        stage.setTitle("Password Keeper");
+        stage.getIcons().add(new Image("icon.png"));
+        stage.setScene(scene);
+        stage.show();
     }
 
     @Override

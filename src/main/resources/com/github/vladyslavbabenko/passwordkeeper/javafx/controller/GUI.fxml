@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.github.vladyslavbabenko.passwordkeeper.javafx.controller.FXController">
+    <VBox alignment="CENTER" spacing="15.0">
+        <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+        </padding>
+        <TableView fx:id="tableView" fixedCellSize="0.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="360.0"
+                   style="-fx-background-color: #edf3f3; -fx-border-color: #65556f; -fx-border-width: 1; -fx-border-radius: 5;">
+            <columns>
+                <TableColumn fx:id="tableViewID" editable="false" maxWidth="30.0" minWidth="30.0" prefWidth="30.0"
+                             resizable="false" style="-fx-background-color: #d4e8e6;" text="ID"/>
+                <TableColumn fx:id="tableViewTitle" maxWidth="165.0" minWidth="165.0" prefWidth="165.0"
+                             resizable="false" style="-fx-background-color: #d4e8e6;" text="Title"/>
+                <TableColumn fx:id="tableViewPassword" maxWidth="165.0" minWidth="165.0" prefWidth="165.0"
+                             resizable="false" style="-fx-background-color: #d4e8e6;" text="Password"/>
+            </columns>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </TableView>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="100.0" prefWidth="360.0" spacing="15.0">
+            <children>
+                <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="32.0" prefWidth="360.0" spacing="16.0">
+                    <TextField fx:id="titleInput" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="172.0"
+                               promptText="Title"
+                               style="-fx-background-color: #ecf2f2; -fx-border-color: #65556f; -fx-border-width: 1; -fx-border-radius: 5;">
+                        <font>
+                            <Font name="Calibri Bold" size="14.0"/>
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="TEXT"/>
+                        </cursor>
+                    </TextField>
+                    <TextField fx:id="passwordInput" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="172.0"
+                               promptText="Password"
+                               style="-fx-background-color: #ecf2f2; -fx-border-color: #65556f; -fx-border-width: 1; -fx-border-radius: 5;">
+                        <font>
+                            <Font name="Calibri Bold" size="14.0"/>
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="TEXT"/>
+                        </cursor>
+                    </TextField>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="50.0" prefWidth="360.0" spacing="16.0">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="50.0" prefWidth="172.0" spacing="12.0">
+                        <children>
+                            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                    minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0"
+                                    style="-fx-background-color: #d4e8e6;" text="Save" textAlignment="CENTER">
+                                <font>
+                                    <Font name="Calibri Bold" size="14.0"/>
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND"/>
+                                </cursor>
+                            </Button>
+                            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                    minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0"
+                                    style="-fx-background-color: #d4e8e6;" text="Delete">
+                                <font>
+                                    <Font name="Calibri Bold" size="14.0"/>
+                                </font>
+                                <graphic>
+                                    <TextField fx:id="deleteIdInput" alignment="CENTER" prefHeight="30.0"
+                                               prefWidth="40.0" promptText="ID"
+                                               style="-fx-border-color: #65556f; -fx-background-color: #ffffff; -fx-border-width: 1; -fx-border-radius: 5;">
+                                        <font>
+                                            <Font name="Calibri Bold" size="14.0"/>
+                                        </font>
+                                        <cursor>
+                                            <Cursor fx:constant="TEXT"/>
+                                        </cursor>
+                                    </TextField>
+                                </graphic>
+                                <cursor>
+                                    <Cursor fx:constant="HAND"/>
+                                </cursor>
+                            </Button>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="50.0" prefWidth="172.0">
+                        <children>
+                            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                    minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="172.0"
+                                    style="-fx-background-color: #d4e8e6;" text="RND" textAlignment="CENTER">
+                                <font>
+                                    <Font name="Calibri Bold" size="14.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets/>
+                                </HBox.margin>
+                                <graphic>
+                                    <Slider fx:id="randomPasswordLengthSlider" blockIncrement="2.0" majorTickUnit="2.0"
+                                            max="16.0" min="8.0" minorTickCount="1" nodeOrientation="LEFT_TO_RIGHT"
+                                            prefHeight="38.0" prefWidth="122.0" showTickLabels="true"
+                                            showTickMarks="true" snapToTicks="true" value="8.0"/>
+                                </graphic>
+                                <cursor>
+                                    <Cursor fx:constant="HAND"/>
+                                </cursor>
+                            </Button>
+                        </children>
+                    </HBox>
+                </HBox>
+            </children>
+        </VBox>
+    </VBox>
+</AnchorPane>
