@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.VladyslavBabenko</groupId>
     <artifactId>PasswordKeeper</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>PasswordKeeper</name>
     <description>The basic idea is to keep all passwords in a custom password manager</description>
     <properties>
@@ -20,6 +20,7 @@
         <mockito-core.version>4.6.1</mockito-core.version>
         <fest-assert-core.version>2.0M10</fest-assert-core.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+        <commons-text.version>1.9</commons-text.version>
     </properties>
 
     <dependencies>
@@ -68,6 +69,11 @@
             <artifactId>fest-assert-core</artifactId>
             <version>${fest-assert-core.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>${commons-text.version}</version>
         </dependency>
     </dependencies>
 
