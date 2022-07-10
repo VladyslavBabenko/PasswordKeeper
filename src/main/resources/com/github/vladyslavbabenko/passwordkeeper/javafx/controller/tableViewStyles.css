@@ -1,0 +1,29 @@
+.table-row-cell:selected {
+    -fx-text-background-color: black;
+}
+
+.table-row-cell:hover {
+    -fx-text-background-color: #119911;
+}
+
+.table-cell {
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb,
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: #edf3f3;
+    -fx-border-color: #65556f;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+}
+
+.table-view .column-header-border .filler {
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
