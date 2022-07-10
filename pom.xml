@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.VladyslavBabenko</groupId>
     <artifactId>PasswordKeeper</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>PasswordKeeper</name>
     <description>The basic idea is to keep all passwords in a custom password manager</description>
     <properties>
