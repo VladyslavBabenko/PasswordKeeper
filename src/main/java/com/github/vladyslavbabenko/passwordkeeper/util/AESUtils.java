@@ -1,6 +1,5 @@
 package com.github.vladyslavbabenko.passwordkeeper.util;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.Cipher;
@@ -15,9 +14,8 @@ public class AESUtils {
     private static final String CHARSET_NAME = "UTF-8";
     private static final String KEY_ALGORITHM = "AES";
     private static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
+    private static final String KEY_VALUE = System.getenv("USERNAME");
     private static Key key;
-    @Value("${masterPassword}")
-    private String KEY_VALUE;
 
     /**
      * Initializes key for AES

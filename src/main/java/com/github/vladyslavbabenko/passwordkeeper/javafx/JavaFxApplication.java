@@ -1,7 +1,7 @@
 package com.github.vladyslavbabenko.passwordkeeper.javafx;
 
 import com.github.vladyslavbabenko.passwordkeeper.PasswordKeeperApplication;
-import com.github.vladyslavbabenko.passwordkeeper.javafx.controller.FXController;
+import com.github.vladyslavbabenko.passwordkeeper.javafx.controller.PasswordCheckController;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Parent;
@@ -25,7 +25,7 @@ public class JavaFxApplication extends Application {
     @Override
     public void start(Stage stage) {
         FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
-        Parent root = fxWeaver.loadView(FXController.class);
+        Parent root = fxWeaver.loadView(PasswordCheckController.class);
         Scene scene = new Scene(root);
         stage.setResizable(false);
         stage.setTitle("Password Keeper");
