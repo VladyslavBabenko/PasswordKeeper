@@ -16,10 +16,7 @@ Based on MVP Scope, we can specify next behaviors:
 * User can see already saved passwords
 * User can update already saved passwords
 * User can delete password by its ID
-* User can create a master password to enter the program
-* User can change a master-password if needed
-* User can select an external file in which all encrypted passwords will be saved, otherwise it will be created
-  next to the program
+* User can log into the program through the PC username
 
 ## Technological stack
 
